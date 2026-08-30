@@ -146,9 +146,9 @@ export default function App() {
       </div>
 
       {/* Main content */}
-      <div className="flex min-h-0 flex-1 gap-4 p-4">
+      <div className="flex min-h-0 flex-1 gap-3 p-3">
         {/* Left: Control Panel */}
-        <aside className="flex w-72 shrink-0 flex-col rounded-2xl border border-slate-800 bg-slate-900/40 p-3 backdrop-blur">
+        <aside className="hidden w-60 shrink-0 flex-col rounded-2xl border border-slate-800 bg-slate-900/40 p-3 backdrop-blur md:flex lg:w-64">
           <ControlPanel
             bins={bins}
             selectedBinId={selectedBinId}
@@ -189,7 +189,7 @@ export default function App() {
         </main>
 
         {/* Right: Route Info */}
-        <aside className="flex w-72 shrink-0 flex-col rounded-2xl border border-slate-800 bg-slate-900/40 p-3 backdrop-blur">
+        <aside className="hidden w-60 shrink-0 flex-col rounded-2xl border border-slate-800 bg-slate-900/40 p-3 backdrop-blur lg:flex xl:w-64">
           <RouteInfo route={route} />
         </aside>
       </div>
